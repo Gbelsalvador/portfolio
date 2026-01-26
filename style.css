@@ -1247,3 +1247,13 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Ensure sections are visible on small screens even if JS fails
+   (prevents sections like Projects from remaining hidden) */
+@media (max-width: 768px) {
+    .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

@@ -35,7 +35,9 @@ html {
 
 body {
     font-family: var(--font-sans);
-    background-color: var(--bg-primary);
+    background:
+        radial-gradient(circle at top, rgba(56, 189, 248, 0.08), transparent 35%),
+        linear-gradient(180deg, #060b16 0%, #0a0f1c 100%);
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
@@ -465,13 +467,26 @@ body {
 
 .small-link {
     width: auto;
-    padding: 0 18px;
-    height: 42px;
+    height: auto;
+    padding: 12px 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
     text-decoration: none;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    transition: all var(--transition-fast);
+}
+
+.small-link:hover {
+    background: rgba(56, 189, 248, 0.12);
+    border-color: rgba(56, 189, 248, 0.6);
+    transform: translateY(-2px);
     color: var(--text-primary);
 }
 
@@ -567,7 +582,8 @@ body {
     height: 100%;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid var(--border-color);
+    border: 3px solid rgba(56, 189, 248, 0.35);
+    box-shadow: 0 20px 60px rgba(56, 189, 248, 0.16);
 }
 
 .avatar-placeholder {
@@ -576,7 +592,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--bg-secondary);
+    background: linear-gradient(135deg, rgba(17, 24, 39, 0.9), rgba(15, 23, 42, 1));
+}
+
+.avatar-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .avatar-placeholder svg {
@@ -1229,7 +1252,7 @@ body {
 .social-link {
     width: 48px;
     height: 48px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     background: var(--bg-card);
@@ -1237,6 +1260,7 @@ body {
     border-radius: 12px;
     color: var(--text-secondary);
     transition: all var(--transition-fast);
+    text-decoration: none;
 }
 
 .social-link:hover {

@@ -440,7 +440,7 @@ body {
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
-    margin-bottom: 48px;
+    margin-bottom: 30px;
 }
 
 @media (min-width: 1024px) {
@@ -449,9 +449,36 @@ body {
     }
 }
 
+.social-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+@media (min-width: 1024px) {
+    .social-row {
+        justify-content: flex-start;
+    }
+}
+
+.small-link {
+    width: auto;
+    padding: 0 18px;
+    height: 42px;
+    font-size: 0.875rem;
+    text-decoration: none;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
 .hero-stats {
     display: flex;
-    gap: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
     justify-content: center;
 }
 
@@ -471,6 +498,14 @@ body {
     }
 }
 
+.stat-pill {
+    min-width: 120px;
+    padding: 12px 18px;
+    background: rgba(56, 189, 248, 0.06);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    border-radius: 999px;
+}
+
 .stat-number {
     font-family: var(--font-heading);
     font-size: 2.5rem;
@@ -488,8 +523,8 @@ body {
 .stat-label {
     display: block;
     font-size: 0.875rem;
-    color: var(--text-muted);
-    margin-top: 4px;
+    color: var(--text-primary);
+    margin-top: 0;
 }
 
 /* Hero Visual */
@@ -785,34 +820,33 @@ body {
 
 .skill-items {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .skill-item {
     position: relative;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
 }
 
 .skill-name {
     display: block;
-    font-size: 0.95rem;
+    font-size: 0.86rem;
     color: var(--text-secondary);
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 
 .skill-bar {
-    height: 6px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 3px;
-    overflow: hidden;
+    display: none;
 }
 
 .skill-progress {
-    height: 100%;
-    background: var(--accent-gradient);
-    border-radius: 3px;
-    width: 0;
-    transition: width 1.5s ease-out;
+    display: none;
 }
 
 /* ========================================

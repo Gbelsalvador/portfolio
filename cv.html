@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV | Gédéon Banyi Bantu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0f1c;
+      --panel: #101827;
+      --panel-strong: #111827;
+      --line: rgba(255,255,255,0.1);
+      --text: #f8fafc;
+      --muted: #a5b4cf;
+      --accent: #38bdf8;
+      --accent-2: #818cf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #061018 0%, #0a0f1c 100%);
+      color: var(--text);
+    }
+    .page {
+      max-width: 1000px;
+      margin: 48px auto;
+      padding: 32px;
+      background: rgba(16,24,39,0.92);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(8,13,24,0.4);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+    }
+    .role {
+      display: inline-block;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+    }
+    .contact {
+      text-align: right;
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 1.8;
+    }
+    .contact a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+    }
+    .section {
+      margin-bottom: 28px;
+    }
+    .section h2 {
+      margin: 0 0 16px;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    p, li {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 18px;
+      margin: 0;
+    }
+    .badge-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style: none;
+      padding-left: 0;
+      margin-top: 12px;
+    }
+    .badge-list li {
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.18);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+    }
+    .sidebar .card {
+      background: rgba(17,24,39,0.9);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 20px;
+    }
+    .card h3 {
+      margin: 0 0 14px;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+    .meta {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .meta li {
+      color: var(--muted);
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+    .btn.primary {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+      color: #061018;
+    }
+    .btn.secondary {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: transparent;
+    }
+    @media (max-width: 760px) {
+      .page { margin: 24px 16px; padding: 24px 20px; }
+      .header { flex-direction: column; }
+      .contact { text-align: left; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <span class="role">AI Developer · Data Science · Backend</span>
+        <h1>Gédéon Banyi Bantu</h1>
+      </div>
+      <div class="contact">
+        <div>Kinshasa, République démocratique du Congo</div>
+        <div><a href="mailto:gbelsalvador6@gmail.com">gbelsalvador6@gmail.com</a></div>
+        <div><a href="https://github.com/Gbelsalvador" target="_blank" rel="noreferrer">github.com/Gbelsalvador</a></div>
+        <div><a href="https://www.linkedin.com/in/g%C3%A9d%C3%A9on-banyi-9394752b9/" target="_blank" rel="noreferrer">linkedin.com/in/gédéon-banyi</a></div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section>
+        <div class="section">
+          <h2>Profil</h2>
+          <p>
+            Étudiant en L4/LMD Intelligence Artificielle et Data Science à l’Université Protestante au Congo,
+            je développe des solutions intelligentes en combinant machine learning, backend et recherche appliquée.
+            Je suis passionné par la création de systèmes capables de résoudre des problèmes concrets avec une forte
+            composante technique et sociale.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Expérience</h2>
+          <ul>
+            <li>
+              <strong>Travail sur des projets IA / data science</strong> chez Mokili SAS, avec une attention portée à la
+              conception de solutions intelligentes et à leurs usages concrets.
+            </li>
+            <li>
+              <strong>Développement backend</strong> en Python et PHP, avec mise en œuvre de systèmes, APIs et applications web.
+            </li>
+            <li>
+              <strong>Prototypage</strong> de solutions autour de l’IA, du machine learning, des LLM et du RAG, notamment pour des usages
+              applicatifs et orientés recherche.
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Compétences clés</h2>
+          <ul class="badge-list">
+            <li>Python</li>
+            <li>PHP</li>
+            <li>Django</li>
+            <li>FastAPI</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>LLM</li>
+            <li>RAG</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Git & GitHub</li>
+            <li>NumPy</li>
+            <li>pandas</li>
+            <li>TensorFlow</li>
+            <li>PyTorch</li>
+            <li>Hugging Face</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="card">
+          <h3>Formation</h3>
+          <ul class="meta">
+            <li>Étudiant L4/LMD</li>
+            <li>Sciences informatiques</li>
+            <li>Option Intelligence Artificielle</li>
+            <li>Data Science</li>
+            <li>Université Protestante au Congo (UPC)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Centres d’intérêt</h3>
+          <ul class="meta">
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>LLM & RAG</li>
+            <li>Recherche appliquée</li>
+            <li>Solutions technologiques en Afrique</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Outils</h3>
+          <ul class="meta">
+            <li>Linux</li>
+            <li>Jupyter Notebook</li>
+            <li>Git & GitHub</li>
+            <li>Arduino & ESP32</li>
+            <li>Zig</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="actions">
+      <a class="btn primary" href="index.html">Retour au portfolio</a>
+      <a class="btn secondary" href="mailto:gbelsalvador6@gmail.com?subject=Bonjour%20Gédéon">Me contacter</a>
+    </div>
+  </main>
+</body>
+</html>
